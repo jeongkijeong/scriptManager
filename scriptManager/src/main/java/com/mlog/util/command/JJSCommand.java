@@ -37,7 +37,7 @@ public class JJSCommand implements Command {
 
 			result = baos.toString();
 		} catch (Exception e) {
-			System.out.println(e);
+			result = e.getMessage();
 		} finally {
 			System.setOut(originalPrintStream);
 		}
