@@ -32,7 +32,7 @@ public class JJSCommand implements Command {
 			ByteArrayOutputStream baos = new ByteArrayOutputStream();
 			System.setOut(new PrintStream(baos));  // redirect standard out to print stream.
 
-			ScriptEngine scriptEngine = new ScriptEngineManager().getEngineByName("JavaScript"); // create script engine. it take a little bit long time...
+			ScriptEngine scriptEngine = new ScriptEngineManager().getEngineByName("JavaScript"); // create script engine. it takes a little bit long time...
 			scriptEngine.eval(script);
 
 			result = baos.toString();
