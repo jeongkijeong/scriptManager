@@ -29,7 +29,7 @@ public class CommandManger {
 		if (jsonStr != null) {
 			System.out.print(jsonStr);
 		}
-
+		
 		return jsonStr;
 	}
 	
